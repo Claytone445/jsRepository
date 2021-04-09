@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+    <title>Список книг</title>
+</head>
+<body>
+ <div class="container mt-4">
+     <h1 class="display-4 text-center"><i class="fas fa-book-open text-primary">
+     </i> Список<span class="text-primary">книг</span></h1>
+     <form id="book-form">
+         <div class="form-group">
+             <label for="title">Название книги.</label>
+             <input type="text" id="title" class = "form-control">
+         </div>
+         <div class="form-group">
+             <label for="author">Автор книги.</label>
+             <input type="text" id="author" class = "form-control">
+         </div>
+         <div class="form-group">
+             <label for="isbn">Номер книги по ISBN.</label>
+             <input type="text" id="isbn" class = "form-control">
+         </div>
+         <input type="submit" value="Добавить книгу" class = "btn btn-primary btn-block">
+         <table class="table table-striped mt-5">
+             <thead>
+                 <tr>
+                     <th>Название книги</th>
+                     <th>Автор книги</th>
+                     <th>Номер книги по ISBN</th>
+                     <th></th>
+                </tr>
+             </thead>
+             <tbody id="book-list"></tbody>
+         </table>
+     </form>
+
+ </div>
+
+
+    <script src="./booklistApp.js"></script>
+</body>
+</html>
